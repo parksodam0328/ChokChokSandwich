@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "672858437573",
+    "firebase_url": "https://chokchoksandwich-246bf.firebaseio.com",
+    "project_id": "chokchoksandwich-246bf",
+    "storage_bucket": "chokchoksandwich-246bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672858437573:android:09523e971c58639b",
+        "android_client_info": {
+          "package_name": "kr.hs.emirim.parksodam.chokchoksandwich"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672858437573-g2j1iopftccqbl8u5c83guc7j6ag1728.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.hs.emirim.parksodam.chokchoksandwich",
+            "certificate_hash": "297aa0b2497df55f5e1110defc7a9536b57825df"
+          }
+        },
+        {
+          "client_id": "672858437573-p7aasq52cb3okmrvej4e0j8pfbpv6sqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZQIrKvUzJJnBUfS5pkZmoEvm56J0yNAQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672858437573-p7aasq52cb3okmrvej4e0j8pfbpv6sqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
