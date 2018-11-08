@@ -2,12 +2,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kr.hs.emirim.parksodam.chokchoksandwich.Home.HomeFragment">
+    tools:context="kr.hs.emirim.parksodam.chokchoksandwich.Home.HomeFragment"
+    android:background="#fff">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="180dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:id="@+id/titleImage"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:text="오늘의 추천 메뉴"
+            android:textColor="#fff"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="150dp"
+        android:src="@color/colorPrimary"
+        android:background="@drawable/rectangle_radius"
+        android:id="@+id/recommend1"
+        android:layout_marginLeft="48dp"/>
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="150dp"
+        android:src="@color/colorPrimary"
+        android:background="@drawable/rectangle_radius"
+        android:id="@+id/recommend2"
+        android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="245dp"
+            android:background="@drawable/rectangle_radius"
+            android:src="@color/colorPrimary"
+            android:id="@+id/recommend3"
+            android:layout_marginLeft="48dp"/>
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="245dp"
+            android:src="@color/colorPrimary"
+            android:background="@drawable/rectangle_radius"
+            android:id="@+id/recommend4"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
 
 </FrameLayout>
