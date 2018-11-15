@@ -27,7 +27,6 @@ import static android.widget.Toast.makeText;
 
 
 public class RegisterActivity extends AppCompatActivity {
-    private DatabaseReference mDatabase;
     private DatabaseReference mUserDatabase;
     EditText userID;
     EditText userName;
@@ -48,7 +47,6 @@ public class RegisterActivity extends AppCompatActivity {
         userPW = (EditText) findViewById(R.id.userPW);
 
         //파이어베이스 데이타베이스 객체 참조
-        mDatabase = FirebaseDatabase.getInstance().getReference();
         mUserDatabase = FirebaseDatabase.getInstance().getReference("users");
         Glide.with(this) //로고 이미지
                 .load("https://firebasestorage.googleapis.com/v0/b/chokchoksandwich-246bf.appspot.com/o/logo%2Flogo.jpg?alt=media&token=51133882-f4f8-469f-8774-480ef5f95103")
@@ -66,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
                 .into(register_btn);
 
         //회원가입 버튼 클릭시 회원 정보 저장 파이어베이스에 저장
-        register_btn.setOnClickListener(new ImageView.OnClickListener() {
+        register_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // 공백체크
@@ -103,7 +101,7 @@ public class RegisterActivity extends AppCompatActivity {
         });
 
         //로그인 텍스트 클릭시 로그인 화면으로 이동
-        login_text.setOnClickListener(new TextView.OnClickListener() {
+        login_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent login_intent = new Intent(getApplicationContext(), LoginActivity.class);
@@ -111,6 +109,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
     }
+    //회원가입 함수
     private void writeNewUser(final String id, final String name, final String pw) {
 
         mUserDatabase.addValueEventListener(new ValueEventListener() {
@@ -135,14 +134,12 @@ public class RegisterActivity extends AppCompatActivity {
                 check++;
                 Intent start_intent = new Intent(getApplicationContext(), BarActivity.class);
                 startActivity(start_intent);
-
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
             }
-
         });
     }
 }
