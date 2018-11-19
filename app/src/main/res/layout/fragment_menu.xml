@@ -2,12 +2,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kr.hs.emirim.parksodam.chokchoksandwich.Menu.MenuFragment">
+    tools:context="kr.hs.emirim.parksodam.chokchoksandwich.Menu.MenuFragment"
+    android:background="#fff">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleImage"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="70dp">
+    <Button
+        android:text="사이드"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:id="@+id/side"
+        android:layout_marginLeft="35dp"
+        android:background="#00983D"/>
 
+    <Button
+        android:text="음료"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:id="@+id/drink"
+        android:layout_marginLeft="10dp"
+        android:background="#00983D"/>
+</LinearLayout>
+
+    <Button
+        android:text="샌드위치"
+        android:layout_width="310dp"
+        android:layout_height="120dp"
+        android:id="@+id/sandwich"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFC80D"/>
+    </LinearLayout>
 </FrameLayout>
